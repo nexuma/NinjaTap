@@ -3,6 +3,9 @@ Enable null movement (Rappy Snappy/Snap Tap) for all Windows machines.
 > [!Caution]
 > Some games can ban you for using null movement scripts.
 > If you are unsure whether a game bans the use of input scripts, please read their terms of service.
+
+![screenshot](NinjaTap/Images/image.png)
+
 # Installation
 Download the right executable file for your system from [releases](https://github.com/nexuma/NinjaTap/releases/) or compile the app manually.
 > [!NOTE]  
