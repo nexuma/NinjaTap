@@ -257,7 +257,7 @@ s_released()
         // Event handler for mouse left button down event
         private void ToggleButton_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-
+            // Change the button image to indicate the click state
             var toggleButtonImage = (Image)ToggleButton.Template.FindName("ToggleButtonImage", ToggleButton);
             if (_isEnabledState)
             {

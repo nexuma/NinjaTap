@@ -3,7 +3,6 @@
     <TargetFramework>net8.0-windows</TargetFramework>
     <OutputType>WinExe</OutputType>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -21,32 +20,39 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <UseWPF>true</UseWPF>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
-	 <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
-	  <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
   </PropertyGroup>
 
   <PropertyGroup>
     <ApplicationIcon>app_icon.ico</ApplicationIcon>
   </PropertyGroup>
+
   <PropertyGroup>
     <ManifestCertificateThumbprint>4E3F26844D03BA1E6FA064B1E2FD38F58C7B8049</ManifestCertificateThumbprint>
   </PropertyGroup>
+
   <PropertyGroup>
     <ManifestKeyFile>NinjaTap_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
+
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
+
   <PropertyGroup>
     <SignManifests>true</SignManifests>
   </PropertyGroup>
-<PropertyGroup>
-	<DebugType>embedded</DebugType>
-</PropertyGroup>
+
+  <PropertyGroup>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
   <ItemGroup>
     <Resource Include="Images\disabled_NINJATAP.png" />
     <Resource Include="Images\enabled_NINJATAP.png" />
   </ItemGroup>
+
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8.1">
       <Visible>False</Visible>
@@ -59,6 +65,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+
   <ItemGroup>
     <Resource Include="Images\off.png" />
     <Resource Include="Images\on.png" />
@@ -70,13 +77,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
   </ItemGroup>
+
   <ItemGroup>
     <Reference Include="AutoHotkey.Interop">
       <HintPath>libs\AutoHotkey.Interop.dll</HintPath>
     </Reference>
   </ItemGroup>
-</Project
+</Project>
