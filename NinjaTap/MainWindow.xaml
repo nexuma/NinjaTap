@@ -1,0 +1,49 @@
+﻿<Window x:Class="NinjaTap.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NinjaTap"
+        mc:Ignorable="d"
+        Height="400" Width="550"
+        WindowStyle="SingleBorderWindow"
+        Title="NinjaTap"
+        ResizeMode="CanResize"
+        Background="Transparent"
+        AllowsTransparency="false"
+        Icon="pack://application:,,,/Images/app_icon.ico">
+    
+    <Border>
+        <Grid>
+            <Grid.Background>
+                <ImageBrush x:Name="BackgroundImageBrush" ImageSource="./Images/disabled_NINJATAP.png" Stretch="UniformToFill"/>
+            </Grid.Background>
+            
+            <Viewbox Stretch="Uniform">
+                <Button x:Name="ToggleButton" Width="100" Height="200" Click="ToggleButton_Click"
+                        PreviewMouseLeftButtonDown="ToggleButton_PreviewMouseLeftButtonDown"
+                        PreviewMouseLeftButtonUp="ToggleButton_PreviewMouseLeftButtonUp"
+                        Focusable="False">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Grid>
+                                <Ellipse>
+                                    <Ellipse.Fill>
+                                        <RadialGradientBrush>
+                                            <RadialGradientBrush.Transform>
+                                                <TransformGroup>
+                                                    <ScaleTransform ScaleY="1" />
+                                                </TransformGroup>
+                                            </RadialGradientBrush.Transform>
+                                        </RadialGradientBrush>
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                                <Image x:Name="ToggleButtonImage" Source="./Images/off.png" Stretch="Uniform"/>
+                            </Grid>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </Viewbox>
+        </Grid>
+    </Border>
+</Window>
