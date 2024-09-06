@@ -9,7 +9,7 @@ GUI app that enables null movement (Rappy Snappy/Snap Tap) for all Windows machi
 # Installation
 Download the right executable file for your system from [releases](https://github.com/nexuma/NinjaTap/releases/) or compile the app manually.
 > [!NOTE]  
-> Only Windows is supported.
+> Only Windows 10 is supported for now, there is a bug on Windows 11.
 
 # Null Movement
 Null movement scripts allow players to move in the direction they intend without interruption or stopping when pressing opposing movement keys (e.g., left and right at the same time). These scripts cancel the stopping effect caused by simultaneous key presses, allowing faster strafing and more precise movement.
