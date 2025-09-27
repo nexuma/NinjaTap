@@ -1,5 +1,5 @@
 # NinjaTap
-GUI app that enables null movement (Rappy Snappy/Snap Tap) for all Windows machines.
+GUI app that enables null movement (Rappy Snappy/Snap Tap) for all Windows 10 machines.
 > [!Caution]
 > Some games can ban you for using null movement scripts.
 > If you are unsure whether a game bans the use of input scripts, please read their terms of service.
